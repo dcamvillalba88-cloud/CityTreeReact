@@ -1,12 +1,14 @@
-import Login from "./Components/Login";
+import CityTreeDashboard from "./Pages/CityTreeDashboard/CityTreeDashboard";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>tree city</h1>
-      <p>Welcome to Tree City!</p>
-      <Login />
-    </div>
+    <>
+      <div className="app-background" />
+      <div className="app-wrapper">
+        <CityTreeDashboard />
+      </div>
+    </>
   );
 }
 
