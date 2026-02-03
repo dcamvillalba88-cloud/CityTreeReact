@@ -10,7 +10,9 @@
 
 .login-panel input {
   width: 100%;
+  max-width: 100%;
   margin-bottom: 8px;
+  box-sizing: border-box;
 }
 .glass {
   background: rgba(255, 255, 255, 0.25);
@@ -21,4 +23,36 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.login-panel button {
+  background-color: #f59e0b;
+  box-shadow: 0 6px 0px #9e7711;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s; /* Para que el efecto de pinchar sea fluido */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); /* El brillo superior */
+  width: 100%;
+  padding: 10px;
+  transform: translateY(2px); /* El botón baja */
+  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.5) !important; /* La sombra se encoge */
+}
+
+.input {
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: inline-block;
+  font-weight: bold;
 }

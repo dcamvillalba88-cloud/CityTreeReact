@@ -1,4 +1,5 @@
 .map-section {
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 12px;
@@ -7,4 +8,22 @@
   background-position: center;
   min-height: 240px;
   padding: 12px;
+}
+.map-section button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur (6px);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 0px #0212f1;
+  transition: all 0.1s; /* Para que el efecto de pinchar sea*/
 }
